@@ -1,44 +1,32 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    text-align: center;
-}
-
+/* Стили для навигации */
 nav {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     background-color: #333;
-    color: white;
+    color: #fff;
     padding: 10px 0;
-    text-aligh: center;
+    text-align: center;
 }
 
 nav ul {
     list-style-type: none;
-    padding: 0;
     margin: 0;
-    text-align: center;
+    padding: 0;
 }
 
 nav ul li {
     display: inline;
-    margin-right: 0 15px;
+    margin-right: 15px;
 }
 
 nav ul li a {
-    color: white;
+    color: #fff;
     text-decoration: none;
-    font-size: 18px;
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
+/* Стили для секций */
 .section {
     display: none;
     padding: 20px;
@@ -49,30 +37,25 @@ nav ul li a:hover {
     display: block;
 }
 
-.button {
-    background-color: dodgerblue;
-    color: green;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+/* Стили для изображений и видео */
+img, video, iframe {
+    max-width: 100%;
+    height: auto;
 }
 
-.button:hover {
-    background-color: royalblue;
-}
-
+/* Анимация */
 .animate {
     animation: fadein 2s;
 }
 
-.fade-in {
-  opacity: 0;
-  animation: fadeInAnimation 2s forwards;
+/* Анимация появления */
+@keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
-@keyframes fadeInAnimation {
-  to {
-    opacity: 1;
-  }
+/* Применяем анимацию к тексту */
+.animate {
+    opacity: 0; /* Изначально текст невидим */
+    animation: fadein 2s forwards; /* Анимация длится 2 секунды */
 }
