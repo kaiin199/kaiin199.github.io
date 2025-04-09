@@ -4,7 +4,7 @@ nav {
     left: 0;
     width: 100%;
     background-color: #CD5C5C;
-    color: #CD5C5C;
+    color: #fff;
     padding: 10px 0;
     text-align: center;
 }
@@ -21,7 +21,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #CD5C5C;
     text-decoration: none;
 }
 
